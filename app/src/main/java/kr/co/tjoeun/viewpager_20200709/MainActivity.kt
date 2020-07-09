@@ -30,6 +30,8 @@ class MainActivity : BaseActivity() {
         mvpa = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mvpa
 
+        //탭 레이아웃의 기능으로 뷰페이저에 붙여주기 (라이브러리 TabLayout 기능)
+            myTabLayout.setupWithViewPager(mainViewPager)
     }
 
 
